@@ -2,9 +2,16 @@ module github.com/a1exCross/common
 
 go 1.19
 
-require github.com/jackc/pgx/v4 v4.18.2
+require (
+	github.com/gojuno/minimock/v3 v3.3.6
+	github.com/jackc/pgx/v4 v4.18.2
+)
 
-require github.com/jackc/puddle v1.3.0 // indirect
+require (
+	github.com/davecgh/go-spew v1.1.1 // indirect
+	github.com/jackc/puddle v1.3.0 // indirect
+	github.com/pmezard/go-difflib v1.0.0 // indirect
+)
 
 require (
 	github.com/georgysavva/scany v1.2.1
