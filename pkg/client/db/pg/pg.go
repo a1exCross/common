@@ -88,7 +88,7 @@ func (p *pg) Ping(ctx context.Context) error {
 	return p.dbc.Ping(ctx)
 }
 
-func (p *pg) BeginTx(ctx context.Context, tx pgx.TxOptions) (pgx.Tx, error) {
+func (p *pg) BeginTx(ctx context.Context, tx pgx.TxOptions) (db.Tx, error) {
 	return p.dbc.BeginTx(ctx, tx)
 }
 
