@@ -46,6 +46,11 @@ type Tx interface {
 	Conn() *pgx.Conn
 }
 
+// Row - описывает метод получения данных при запросе в БД из одной строки
+type Row interface {
+	Scan(dest ...interface{}) error
+}
+
 // Handler - функция-обертка над транзакциями
 type Handler func(ctx context.Context) error
 
